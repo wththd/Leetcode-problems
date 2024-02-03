@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using LeetCodeProblems.Basic;
+﻿using LeetCodeProblems.Basic;
 
 namespace LeetCodeProblems.Medium.LongestSubstringWithoutRepeating;
 
@@ -28,23 +27,26 @@ public class LongestSubstringWithoutRepeating : BaseTest<string, int>
 
     protected override int Solve(string input)
     {
-        var hashSet = new HashSet<char>();
+        var dictionary = new Dictionary<char, int>();
         var result = 0;
-        foreach (var letter in input)
+        for (var i = 0; i < input.Length; i++)
         {
-            if (hashSet.Contains(letter))
+            var letter = input[i];
+            if (dictionary.ContainsKey(letter))
             {
-                if (hashSet.Count > result)
+                if (dictionary.Count > result)
                 {
-                    result = hashSet.Count;
+                    result = dictionary.Count;
                 }
-                
-                hashSet.Clear();
+
+                i = dictionary[letter];
+                dictionary.Clear();
+                continue;
             }
-            
-            hashSet.Add(letter);
+
+            dictionary[letter] = i;
         }
 
-        return Math.Max(hashSet.Count, result);
+        return Math.Max(dictionary.Count, result);
     }
 }
