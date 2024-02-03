@@ -20,7 +20,7 @@ public abstract class BaseTest<TInput1, TInput2,TOutput> : BaseTest
             stopWatch.Start();
             var result = Solve(_inputs[i], _inputs2[i]);
             stopWatch.Stop();
-            Assert.That(_outputs[i], Is.EqualTo(result));
+            Assert.That(result, Is.EqualTo(_outputs[i]));
             Assert.That(stopWatch.Elapsed.Seconds, Is.LessThan(_secondsToSolve));
             Console.WriteLine($"{GetType().Name} test {i} time : {stopWatch.Elapsed.Nanoseconds} ns");
         }

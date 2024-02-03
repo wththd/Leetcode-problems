@@ -79,7 +79,7 @@ public class AddTwoNumbers : BaseTest<ListNode, ListNode, ListNode>
             var result = Solve(_inputs[i], _inputs2[i]);
             stopWatch.Stop();
             Assert.IsTrue(_outputs[i].Equals(result));
-            //Assert.That(stopWatch.Elapsed.Seconds, Is.LessThan(_secondsToSolve));
+            Assert.That(stopWatch.Elapsed.Seconds, Is.LessThan(_secondsToSolve));
             Console.WriteLine($"{GetType().Name} test {i} time : {stopWatch.Elapsed.Nanoseconds} ns");
         }
     }
