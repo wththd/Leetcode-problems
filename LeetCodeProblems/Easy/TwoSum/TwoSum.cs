@@ -32,14 +32,14 @@ public class TwoSum : BaseTest<int[], int, int[]>
         };
     }
 
-    protected override int[] Solve(int[] input1, int input2)
+    protected override int[] Solve(int[] input, int input2)
     {
         var result = new int[2];
-        for (var i = 0; i < input1.Length; i++)
+        for (var i = 0; i < input.Length; i++)
         {
-            for (var j = input1.Length - 1; j > i; j--)
+            for (var j = input.Length - 1; j > i; j--)
             {
-                if (input1[i] + input1[j] == input2)
+                if (input[i] + input[j] == input2)
                 {
                     result[0] = i;
                     result[1] = j;

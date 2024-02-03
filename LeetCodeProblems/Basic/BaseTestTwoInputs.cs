@@ -8,7 +8,7 @@ public abstract class BaseTest<TInput1, TInput2,TOutput> : BaseTest
     protected List<TInput2> _inputs2 = new();
     protected List<TOutput> _outputs = new();
 
-    protected abstract TOutput Solve(TInput1 input1, TInput2 input2);
+    protected abstract TOutput Solve(TInput1 input, TInput2 input2);
 
     [Test]
     public virtual void Test()

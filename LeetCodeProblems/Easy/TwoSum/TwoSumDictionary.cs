@@ -32,12 +32,12 @@ public class TwoSumDictionary : BaseTest<int[], int, int[]>
         };
     }
 
-    protected override int[] Solve(int[] input1, int input2)
+    protected override int[] Solve(int[] input, int input2)
     {
         var dictionary = new Dictionary<int, int>();
-        for (var i = 0; i < input1.Length; i++)
+        for (var i = 0; i < input.Length; i++)
         {
-            var value = input1[i];
+            var value = input[i];
             var target = input2 - value;
             if (dictionary.ContainsKey(target))
             {

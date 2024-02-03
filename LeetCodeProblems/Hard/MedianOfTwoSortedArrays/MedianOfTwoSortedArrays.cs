@@ -28,11 +28,11 @@ public class MedianOfTwoSortedArrays : BaseTest<int[], int[], float>
         };
     }
 
-    protected override float Solve(int[] input1, int[] input2)
+    protected override float Solve(int[] input, int[] input2)
     {
-        var resultArray = new int[input1.Length + input2.Length];
-        Array.Copy(input1, resultArray, input1.Length);
-        Array.Copy(input2, 0, resultArray, input1.Length, input2.Length);
+        var resultArray = new int[input.Length + input2.Length];
+        Array.Copy(input, resultArray, input.Length);
+        Array.Copy(input2, 0, resultArray, input.Length, input2.Length);
         Array.Sort(resultArray);
         return resultArray.Length % 2 == 1
             ? resultArray[resultArray.Length / 2]

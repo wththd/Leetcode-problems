@@ -45,14 +45,14 @@ public class AddTwoNumbers : BaseTest<ListNode, ListNode, ListNode>
         };
     }
 
-    protected override ListNode Solve(ListNode input1, ListNode input2)
+    protected override ListNode Solve(ListNode input, ListNode input2)
     {
         var resultNode = new ListNode();
         var currentNode = resultNode;
         var addition = 0;
 
-        while (input1 != null || input2 != null || addition != 0) {
-            var firstNodeValue = input1?.val ?? 0;
+        while (input != null || input2 != null || addition != 0) {
+            var firstNodeValue = input?.val ?? 0;
             var secondNode = input2?.val ?? 0;
 
             var sum = firstNodeValue + secondNode + addition;
@@ -61,7 +61,7 @@ public class AddTwoNumbers : BaseTest<ListNode, ListNode, ListNode>
             currentNode.next = new ListNode(sum % 10);
             currentNode = currentNode.next;
 
-            input1 = input1?.next;
+            input = input?.next;
             input2 = input2?.next;
         }
 
