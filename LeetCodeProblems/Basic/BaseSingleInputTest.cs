@@ -19,7 +19,7 @@ public abstract class BaseTest<TInput, TOutput> : BaseTest
             stopWatch.Start();
             var result = Solve(_inputs[i]);
             stopWatch.Stop();
-            Assert.That(_outputs[i], Is.EqualTo(result));
+            Assert.That(result, Is.EqualTo(_outputs[i]));
             Assert.That(stopWatch.Elapsed.Seconds, Is.LessThan(_secondsToSolve));
             Console.WriteLine($"{GetType().Name} test {i} time in milli: {stopWatch.ElapsedMilliseconds}");
         }
