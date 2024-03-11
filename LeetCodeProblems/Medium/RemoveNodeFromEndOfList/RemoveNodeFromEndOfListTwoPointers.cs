@@ -2,8 +2,7 @@
 using LeetCodeProblems.Basic;
 using LeetCodeProblems.Common;
 
-namespace LeetCodeProblems.Medium.RemoveNodeFromEndOfList;
-
+namespace LeetCodeProblems.Medium;
 public class RemoveNodeFromEndOfListTwoPointers : BaseTest<ListNode, int, ListNode>
 {
     public override void Setup()

@@ -1,7 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.ThreeSumClosest;
-
+namespace LeetCodeProblems.Medium;
 public class ThreeSumClosest : BaseTest<int[], int, int>
 {
     public override void Setup()

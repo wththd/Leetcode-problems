@@ -1,6 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.ContainerWithMostWater;
+namespace LeetCodeProblems.Medium;
 
 public class ContainerWithMostWater : BaseTest<int[], int>
 {

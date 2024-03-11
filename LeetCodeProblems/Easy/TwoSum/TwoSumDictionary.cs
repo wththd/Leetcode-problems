@@ -1,6 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Easy.TwoSum;
+namespace LeetCodeProblems.Easy;
 
 public class TwoSumDictionary : BaseTest<int[], int, int[]>
 {

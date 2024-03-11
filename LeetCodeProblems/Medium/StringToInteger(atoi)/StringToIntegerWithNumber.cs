@@ -1,7 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.StringToInteger;
-
+namespace LeetCodeProblems.Medium;
 public class StringToIntegerWithNumber : BaseTest<string, int>
 {
     public override void Setup()

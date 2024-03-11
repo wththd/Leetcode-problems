@@ -1,7 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.ZigZagConversion;
-
+namespace LeetCodeProblems.Medium;
 public class ZigZagConversionDirection : BaseTest<string, int, string>
 {
     /// <summary>

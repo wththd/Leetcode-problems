@@ -1,8 +1,7 @@
 ﻿using System.Text;
 using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.ZigZagConversion;
-
+namespace LeetCodeProblems.Medium;
 public class ZigZagConversionStringBuilder : BaseTest<string, int, string>
 {
     /// <summary>

@@ -1,6 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Easy.NumberPalindrome;
+namespace LeetCodeProblems.Easy;
 
 public class NumberPalindrome : BaseTest<int, bool>
 {

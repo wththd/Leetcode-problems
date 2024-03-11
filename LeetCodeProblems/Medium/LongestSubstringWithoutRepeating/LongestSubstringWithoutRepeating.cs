@@ -1,7 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.LongestSubstringWithoutRepeating;
-
+namespace LeetCodeProblems.Medium;
 public class LongestSubstringWithoutRepeating : BaseTest<string, int>
 {
     public override void Setup()

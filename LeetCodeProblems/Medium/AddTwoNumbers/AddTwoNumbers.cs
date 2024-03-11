@@ -2,7 +2,7 @@
 using LeetCodeProblems.Basic;
 using LeetCodeProblems.Common;
 
-namespace LeetCodeProblems.Medium.AddTwoNumbers;
+namespace LeetCodeProblems.Medium;
 
 public class AddTwoNumbers : BaseTest<ListNode, ListNode, ListNode>
 { 

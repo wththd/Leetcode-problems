@@ -1,7 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.FourSum;
-
+namespace LeetCodeProblems.Medium;
 public class FourSum : BaseTest<int[], int, List<List<int>>> 
 {
     public override void Setup()

@@ -1,7 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.ReverseInteger;
-
+namespace LeetCodeProblems.Medium;
 public class ReverseIntegerAsNumber : BaseTest<int, int>
 {
     public override void Setup()

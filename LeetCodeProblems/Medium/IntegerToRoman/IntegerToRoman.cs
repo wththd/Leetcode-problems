@@ -1,8 +1,7 @@
 ﻿using System.Text;
 using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.IntegerToRoman;
-
+namespace LeetCodeProblems.Medium;
 public class IntegerToRoman : BaseTest<int, string>
 {
     public override void Setup()

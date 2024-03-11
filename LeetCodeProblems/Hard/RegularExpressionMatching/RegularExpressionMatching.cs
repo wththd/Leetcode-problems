@@ -1,6 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Hard.RegularExpressionMatching;
+namespace LeetCodeProblems.Hard;
 
 public class RegularExpressionMatching : BaseTest<string, string, bool>
 {

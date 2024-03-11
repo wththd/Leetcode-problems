@@ -1,7 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.ThreeSum;
-
+namespace LeetCodeProblems.Medium;
 public class ThreeSum : BaseTest<int[], List<IList<int>>>
 {
     public override void Setup()

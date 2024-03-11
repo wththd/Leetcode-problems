@@ -1,8 +1,7 @@
 ﻿using System.Text;
 using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.ReverseInteger;
-
+namespace LeetCodeProblems.Medium;
 public class ReverseIntegerAsString : BaseTest<int, int>
 {
     public override void Setup()

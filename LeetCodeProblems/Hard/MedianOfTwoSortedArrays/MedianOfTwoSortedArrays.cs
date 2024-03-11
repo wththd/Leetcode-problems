@@ -1,6 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Hard.MedianOfTwoSortedArrays;
+namespace LeetCodeProblems.Hard;
 
 public class MedianOfTwoSortedArrays : BaseTest<int[], int[], float>
 {

@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Easy.LongestCommonPrefix;
+namespace LeetCodeProblems.Easy;
 
 public class LongestCommonPrefix : BaseTest<string[], string>
 {

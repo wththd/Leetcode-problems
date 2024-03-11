@@ -1,7 +1,6 @@
 ﻿using LeetCodeProblems.Basic;
 
-namespace LeetCodeProblems.Medium.LongestPalindromicSubstring;
-
+namespace LeetCodeProblems.Medium;
 public class LongestPalindromicSubstring : BaseTest<string, string>
 {
     public override void Setup()
