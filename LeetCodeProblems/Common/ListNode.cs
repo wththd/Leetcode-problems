@@ -1,4 +1,4 @@
-﻿namespace LeetCodeProblems.Medium.AddTwoNumbers;
+﻿namespace LeetCodeProblems.Common;
 
 public class ListNode
 {
@@ -17,7 +17,7 @@ public class ListNode
         var targetObj = (ListNode)obj;
         if (targetObj == null)
         {
-            return false;
+            targetObj = new ListNode();
         }
         
         Console.WriteLine($"{objToCheck.val} {targetObj.val}");
